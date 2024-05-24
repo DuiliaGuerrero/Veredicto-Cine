@@ -5,7 +5,6 @@
     align-items: center;
     background: rgb(34, 193, 195);
     background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(45, 154, 253, 0.9556197478991597) 100%);
- 
     border-radius: 7px;
     display: flex;
     justify-content: space-around;
@@ -299,4 +298,39 @@
     font-family: "Anton", sans-serif;
     font-size: xx-large;
     color: #007bff;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .search input {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .overview-section {
+        margin: 20px;
+        width: 100%;
+    }
+
+    .movies {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .card-page{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .logo {
+        font-size: large;
+    }
+
+    .overview-section {
+        font-size: 1em;
+    }
 }
